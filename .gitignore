@@ -1,0 +1,12 @@
+/blib/
+/resources/*.so
+/resources/*.dylib
+.precomp/
+# Vim swap files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# Vim session
+Session.vim
+*~
+# Vim auto-generated tag files
+tags

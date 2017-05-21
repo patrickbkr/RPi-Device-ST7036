@@ -1,0 +1,23 @@
+{
+  "name" : "RPi-Device-ST7036",
+  "source-url" : "https://github.com/patszim/perl6-RPi-Device-ST7036.git",
+  "repo-type" : "git",
+  "perl" : "6.c",
+  "provides" : {
+    "RPi::Device::ST7036" : "lib/RPi/Device/ST7036.pm6"
+  },
+  "license" : "http://www.perlfoundation.org/artistic_license_2_0",
+  "depends" : [
+      "RPi::Wiring::Pi"
+  ],
+  "test-depends" : [
+    "Test::META"
+  ],
+  "description" : "Device support for the ST7036 dot matrix LCD driver chip.",
+  "version" : "*",
+  "meta6" : "0",
+  "authors" : [
+    "Patrick Sebastian Zimmermann"
+  ]
+}
+
