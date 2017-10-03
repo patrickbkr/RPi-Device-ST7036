@@ -315,13 +315,16 @@ Display driver for ST7036 based matrix displays.
 Takes the following parameters:
 
 =item rs-pin
+
 RPi pin number connected to the register select pin of the display.
 This library uses the Wiring Pi pin numbering.
 
 =item spi-channel
+
 The SPI channel the display is connected to. Either 0 or 1.
 
 =item setup
+
 An RPi::Device::ST7036::Setup object. Instances of this class contain all
 configuration options that are always the same for a specific display.
 
@@ -329,31 +332,40 @@ If you have a display for which there is not yet an entry in the Setup
 class ready to use, please write one and create a pull request!
 
 =item cursor
+
 Whether to display a cursor.
 
 =item cursor-blink
+
 Whether the cursor should blink.
 
 =item contrast
+
 A contrast value between 0 and 63.
 
 =item double-height
+
 Whether a double hight line should be used (irrelevant for single line
 displays).
 
 =item display-on
+
 Whether the display should be turned on initially.
 
 =head2 init
+
 Initialize the display. Must be called before anything else works.
 
 =head2 write
-Write some test on the display.
+
+Write some text on the display.
 
 =head2 home
+
 Return the cursor to position 0.
 
 =head2 clear
+
 Clear the display.
 
 =end pod
