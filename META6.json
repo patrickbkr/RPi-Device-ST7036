@@ -18,7 +18,10 @@
   "repo-type" : "git",
   "resources" : [ ],
   "source-url" : "https://github.com/patszim/perl6-RPi-Device-ST7036.git",
-  "tags" : [ ],
+  "tags" : [
+    "RPi",
+    "Raspberry Pi"
+  ],
   "test-depends" : [
     "Test::META"
   ],
