@@ -1,29 +1,27 @@
 {
-  "authors" : [
-    "Patrick Sebastian Zimmermann"
-  ],
-  "build-depends" : [ ],
-  "depends" : [
-    "RPi::Wiring::Pi"
-  ],
-  "description" : "Support for the ST7036 dot matrix display.",
-  "license" : "http://www.perlfoundation.org/artistic_license_2_0",
-  "meta6" : "0",
-  "name" : "RPi::Device::ST7036",
-  "perl" : "6.c",
-  "provides" : {
-    "RPi::Device::ST7036" : "lib/RPi/Device/ST7036.pm6",
-    "RPi::Device::ST7036::Setup" : "lib/RPi/Device/ST7036/Setup.pm6"
-  },
-  "repo-type" : "git",
-  "resources" : [ ],
-  "source-url" : "https://github.com/patszim/perl6-RPi-Device-ST7036.git",
-  "tags" : [
+  "perl"         : "6.c",
+  "name"         : "RPi::Device::ST7036",
+  "license"      : "Artistic-2.0",
+  "version"      : "0.0.2",
+  "description"  : "Support for the ST7036 dot matrix display.",
+  "tags"         : [
     "RPi",
     "Raspberry Pi"
+  ],
+  "depends"      : [
+    "RPi::Wiring::Pi"
   ],
   "test-depends" : [
     "Test::META"
   ],
-  "version" : "0.0.1"
+  "provides"     : {
+    "RPi::Device::ST7036"        : "lib/RPi/Device/ST7036.pm6",
+    "RPi::Device::ST7036::Setup" : "lib/RPi/Device/ST7036/Setup.pm6"
+  },
+  "authors"      : [
+    "Patrick Sebastian Zimmermann"
+  ],
+  "support"      : {
+    "source" : "git://github.com/patzim/perl6-RPi-Device-ST7036.git"
+  }
 }
