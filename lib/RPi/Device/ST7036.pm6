@@ -32,7 +32,7 @@ enum Direction <
 >;
 
 has Pin $!rs-pin is required; # register select. 0 = instruction register, 1 = data register
-#has Pin $!reset-pin is required;
+has Pin $!reset-pin is required;
 has $!spi-channel is required where 0|1;
 has RPi::Device::ST7036::Setup $!setup is required;
 
@@ -47,6 +47,7 @@ has @!row-offsets = ((0x00), (0x00, 0x40), (0x00, 0x10, 0x20))[$!setup.rows - 1]
 
 submethod BUILD(
     Pin :$!rs-pin,
+    Pin :$!reset-pin,
     :$!spi-channel where 0|1,
     RPi::Device::ST7036::Setup :$!setup,
     Contrast :$!contrast = 32,
@@ -228,7 +229,8 @@ method !tobin( uint8 $num --> Str ) {
 
 method init() {
     pinMode $!rs-pin, OUTPUT;
-    #pinMode $!reset-pin, OUTPUT;
+    pinMode $!reset-pin, OUTPUT;
+    digitalWrite $!reset-pin, HIGH;
 
     self!cmd-functionSet;
     self!cmd-biasSet;
