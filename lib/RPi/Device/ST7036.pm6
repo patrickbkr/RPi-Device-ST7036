@@ -285,7 +285,7 @@ method double-height( $enable, $position ) { ... }
 
 =head1 NAME
 
-RPi::Device::st7036 - Support for the ST7036 dot matrix display.
+RPi::Device::ST7036 - Support for the ST7036 dot matrix display.
 
 =head1 SYNOPSIS
 

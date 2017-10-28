@@ -1,7 +1,7 @@
 NAME
 ====
 
-RPi::Device::st7036 - Support for the ST7036 dot matrix display.
+RPi::Device::ST7036 - Support for the ST7036 dot matrix display.
 
 SYNOPSIS
 ========
